@@ -1,0 +1,24 @@
+<ion-header class="header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png" alt="logo" class="logo"></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+ 
+  <ion-card class="ion-text-center">
+    <ion-card-header>
+      <ion-card-title>Generar Codigo QR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+  
+      <qrcode [qrdata]="qrcodestring" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+  
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

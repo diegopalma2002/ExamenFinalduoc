@@ -1,0 +1,34 @@
+<ion-header class="header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png" alt="logo" class="logo"></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [style.visibility] ="content">
+
+
+    
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Escanear Codigo QR</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <div>
+      En esta sección puedes registrar tu asistencia escaneando el codigo QR que el docente ha generado
+    </div>
+    <ion-button color = "primary" class ="ion-margin" (click)="startScan()" expand ="block">
+      SCAN
+      </ion-button>
+      
+      <ion-item *ngIf="scanResult">
+        <ion-label class ="ion-text-wrap">  Estado Asistencia:  {{scanResult}} </ion-label>
+      </ion-item>
+
+  </ion-card-content>
+</ion-card>
+    
+</ion-content>

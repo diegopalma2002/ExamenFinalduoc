@@ -1,0 +1,73 @@
+ion-content {
+	--padding-top: 10%;
+	--padding-start: 10%;
+	--padding-end: 10%;
+	--background: url('https://66.media.tumblr.com/c8e817927aeb95db2ba30c59264b52ae/d1086fd0d06ea4f8-28/s500x750/02de36deebb31e1b4dcde3dd78222f25917e7cd9.jpg')
+		0 0/100% 100% no-repeat;
+}
+
+ion-col {
+   
+    color: white;
+    text-align: center;
+  }
+
+
+  ion-card {
+    --background: #000000  ;
+    --color: white;
+  }
+  
+  ion-card-title {
+    --color: white;
+  }
+  
+  ion-card-subtitle {
+    --color: white;
+  }
+  
+  /* iOS places the subtitle above the title */
+  ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+ 
+
+  ion-button {
+    --background: #fdb50e;
+   
+
+  
+    --color: white;
+  
+  
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+  
+
+  
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+  }
+
+
+.header{
+    /* Enable flex mode. */
+    display: flex; 
+    
+    /* Spread out the elements inside the header. */
+    justify-content: space-between;
+
+    /* Align items vertically in the center. */
+    align-items: center;
+}
+
+.logo {
+  width: 25%;
+  
+  height: auto;
+}
+
+
+img{
+  padding: 20px;
+}

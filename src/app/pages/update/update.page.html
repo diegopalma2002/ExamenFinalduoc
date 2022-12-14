@@ -1,0 +1,66 @@
+<ion-header class="header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png" alt="logo" class="logo"></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Editar Mis Datos</ion-card-title>
+
+    </ion-card-header>
+  
+  
+  </ion-card>
+  <ion-card>
+  
+  
+    <ion-card-content>
+      <ion-list lines="full">
+        <form [formGroup]="updateUserFg" (ngSubmit)="onSubmit()">
+          
+          <ion-item>
+            <ion-label position="floating">Nombre</ion-label>
+            <ion-input formControlName="name" type="text" required></ion-input>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label position="floating">Apellido</ion-label>
+            <ion-input formControlName="lastname" type="text" required>
+            </ion-input>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label position="floating">Telefono</ion-label>
+            <ion-input formControlName="username" type="text" required>
+            </ion-input>
+          </ion-item>      
+
+          <ion-item>
+            <ion-label position="floating">RUT</ion-label>
+            <ion-input formControlName="rut" type="text" required>
+            </ion-input>
+          </ion-item>      
+
+          <ion-item>
+            <ion-label position="floating">Asignatura</ion-label>
+            <ion-input formControlName="asignatura" type="text" required>
+            </ion-input>
+          </ion-item>      
+    
+          <ion-row>
+            <ion-col>
+              <ion-button type="submit" color="warning" expand="block">Actualizar</ion-button>
+            </ion-col>
+          </ion-row>
+          
+        </form>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

@@ -1,0 +1,46 @@
+<ion-header class="header">
+  <ion-toolbar>
+    <ion-buttons slot="start"></ion-buttons>
+    <ion-title> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png" alt="logo" class="logo"></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+<ion-card >
+  <div id="div">
+    <img  src="https://th.bing.com/th/id/OIP.byGkb7UcdQNAiO8Tm1xr5gHaHa?pid=ImgDet&rs=1" />
+    <h5><b>nombre:</b> ignacio</h5>
+    <h5><b>apellido:</b> vargas</h5>
+    <h5><b>correo:</b> nacho.12@duocuc.cl</h5>
+    <h5><b>carrera:</b> diseño</h5>
+    </div>
+  
+</ion-card>
+  <ion-card>
+  <ion-list></ion-list>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registrar Asistencia</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-button [routerLink] = "['/scanqr/']"> Registro QR
+      
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+
+
+   
+  <ion-card-content>
+
+    <ion-button class = "heated" (click)="logout()">salir</ion-button>
+
+  
+</ion-card-content>
+</ion-card>
+
+</ion-content>
+

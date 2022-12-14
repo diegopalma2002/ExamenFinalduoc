@@ -1,0 +1,9 @@
+{
+  "alumno": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "profesor": [
+    { "id": 1, "body": "some comment", "postId": 234 }
+  ]
+
+}

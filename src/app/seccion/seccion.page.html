@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>seccion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-select placeholder="Selecciona SECCION">
+        <ion-select-option value="apples">003D</ion-select-option>
+        <ion-select-option value="oranges">005D</ion-select-option>
+        <ion-select-option value="bananas">003D</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Selecciona asignatura">
+          <ion-select-option value="apples">lenguaje</ion-select-option>
+          <ion-select-option value="oranges">aplicaciones mobile</ion-select-option>
+          <ion-select-option value="bananas">base de datos</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+  <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime id="datetime"></ion-datetime>
+  </ng-template>
+</ion-modal>
+<ion-button [routerLink] = "['/genqr/']"> generar QR
+      
+</ion-button>
+</ion-content>

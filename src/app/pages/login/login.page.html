@@ -1,0 +1,45 @@
+<ion-header class="header">
+	<ion-toolbar>
+	  <ion-title> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png" alt="logo" class="logo"></ion-title>
+	</ion-toolbar>
+  </ion-header>
+  
+
+<ion-content>
+
+
+	<ion-card>
+		<ion-card-header>
+		  <ion-card-title>Inicar Sesión</ion-card-title>
+
+		</ion-card-header>
+	
+	  </ion-card>
+	<ion-card>
+
+		<ion-card-content>
+			<form (ngSubmit)="login()" [formGroup]="credentials">
+				<div class="input-group">
+					<ion-item>
+						<ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+					</ion-item>
+					
+					<ion-item>
+						<ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+					</ion-item>
+					
+				</div>
+		
+				<ion-button type="submit" expand="block" [disabled]="!credentials.valid">Iniciar Sesión</ion-button>
+				
+				<ion-button type="button" expand="block" color="warning"  [routerLink]="['/create']"
+					>Registro
+				</ion-button>
+		
+				
+			</form>
+		</ion-card-content>
+	  </ion-card>
+
+	
+</ion-content>

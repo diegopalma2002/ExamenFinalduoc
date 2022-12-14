@@ -1,0 +1,41 @@
+ion-content {
+	--padding-top: 10%;
+	--padding-start: 10%;
+	--padding-end: 10%;
+	--background: url('https://files.passeidireto.com/3af082fb-6799-4fce-8d77-5d51d4e41337/bg2.png')
+		0 0/100% 100% no-repeat;
+}
+
+.input-group {
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.errors {
+	font-size: small;
+	color: #fff;
+	background: var(--ion-color-danger);
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+.header{
+    /* Enable flex mode. */
+    display: flex; 
+    
+    /* Spread out the elements inside the header. */
+    justify-content: space-between;
+
+    /* Align items vertically in the center. */
+    align-items: center;
+}
+
+.logo {
+  width: 25%;
+  
+  height: auto;
+}
